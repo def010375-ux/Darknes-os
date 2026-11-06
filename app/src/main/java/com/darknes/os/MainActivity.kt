@@ -70,7 +70,7 @@ class MainActivity : Activity() {
 
         search = EditText(this).apply {
             hint = "Поиск приложений"; setHintTextColor(Color.GRAY); setTextColor(Color.WHITE)
-            textSize = 14f; singleLine = true; setPadding(dp(16), 0, dp(16), 0)
+            textSize = 14f; setSingleLine(true); setPadding(dp(16), 0, dp(16), 0)
             background = panel(Color.argb(110, 32, 40, 53), 18f)
         }
         root.addView(search, LinearLayout.LayoutParams(-1, dp(48)).apply { bottomMargin = dp(16) })
